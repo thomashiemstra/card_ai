@@ -11,11 +11,7 @@ class AbstractCardGame(ABC):
     @abstractmethod
     def play(self, action):
         # play an action, must be an int or a numpy int array
-        pass
-
-    @abstractmethod
-    def observe(self):
-        # return the current state of the game (numpy array of ints), reward (int) and done (boolean)
+        # also return the new state of the game (numpy array of ints), reward (int) and done (boolean)
         # returns np.array(state), reward, done
         pass
 
